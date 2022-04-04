@@ -15,8 +15,7 @@
 }
 
 .footerBlock {
-    height: 50px;
-    width: 400px;
+    width: 280px;
     border: 1px solid;
     display: flex;
     justify-content: space-between;

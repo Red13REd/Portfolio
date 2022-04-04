@@ -16,14 +16,6 @@
     justify-content: center;
 }
 
-
-
-.text {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-}
-
 .button {
     background-color: #7a7a7a;
     border: none;
@@ -37,3 +29,26 @@
     cursor: pointer;
     font-weight: bold;
 }
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: #5e91e5;
+    align-items: center;
+}
+
+.title {
+    margin: 5px 0 3px 0;
+    background-color: #f2ffd0;
+    width: 95%;
+}
+
+.description {
+    margin: 3px 0;
+    background-color: #f2ffd0;
+    width: 95%;
+}
+
+
+
