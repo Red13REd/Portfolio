@@ -1,0 +1,110 @@
+@import "../../common/style/sass/variables";
+@import "../../common/style/sass/mixins";
+
+
+
+.project {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+
+  .image {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+    }
+
+    .button {
+      padding: 0 25px;
+      line-height: 46px;
+      display: inline-block;
+      background: none;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none !important;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgb(0,0,0 /25%);
+      cursor: pointer !important;
+      background: $themeColor;
+      color: $textColorPrimary;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: auto;
+        top: 0;
+        width: 0;
+        transition: all .35s ease;
+        background: black;
+        z-index: -1;
+      }
+
+      &:hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        z-index: -1;
+      }
+    }
+  }
+
+  .textInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: center;
+    padding: 20px;
+    margin: -30px 10px 0;
+    box-shadow: 0 25px 50px -12px rgb(0,0,0 /25%);
+    position: relative;
+    overflow: hidden;
+    background: $backgroundPrimaryColor;
+
+    .title {
+      @include text(18px, 600,1.3,$textColorPrimary);
+      margin-bottom: 15px;
+      cursor: pointer;
+      margin-top: 0;
+    }
+
+    .description {
+      width: 95%;
+      display: flex;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0 0 12px;
+      color: $textColorSecond;
+    }
+
+  }
+}
+
+

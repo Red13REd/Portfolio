@@ -1,0 +1,26 @@
+@import "../../style/sass/variables";
+@import "../../style/sass/mixins";
+
+.title {
+  h2 {
+    @include text(45px, 800,1.2,$textColorPrimary);
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 3px;
+      background: $themeColor;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}
+
+

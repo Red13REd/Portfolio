@@ -2,8 +2,8 @@ import './App.css';
 import {Header} from "./header/Header";
 import {Main} from "./main/Main";
 import {Skills} from "./skills/Skills";
-import {MyWorks} from "./myWorks/MyWorks";
-import {Telework} from "./telework/telework";
+import {Projects} from "./projects/projects";
+import {Hire} from "./hire/Hire";
 import {Contacts} from "./сontacts/Contacts";
 import {Footer} from "./footer/Footer";
 
@@ -13,8 +13,8 @@ function App() {
             <Header/>
             <Main/>
             <Skills/>
-            <MyWorks/>
-            <Telework/>
+            <Projects/>
+            <Hire/>
             <Contacts/>
             <Footer/>
         </div>

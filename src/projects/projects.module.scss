@@ -1,0 +1,27 @@
+@import "../common/style/sass/variables";
+@import "../common/style/sass/mixins";
+
+.projectsBlock {
+  background-color:$backgroundPrimaryColor;
+
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    @include container();
+
+    .projects {
+      display: flex;
+     /* border: 1px solid;*/
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      padding: 20px;
+      @media screen and (max-width: 1177px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
