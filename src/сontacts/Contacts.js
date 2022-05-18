@@ -1,12 +1,13 @@
 import React from 'react';
 import style from './Contacts.module.scss'
+import {Title} from "../common/components/title/Title";
 
 
 export const Contacts = () => {
     return (
         <div className={style.block}>
             <div className={style.container}>
-                <h2>Контакты</h2>
+                <Title title="Contacts"/>
                 <form className={style.form} action="">
                     <input className={style.input} type="text"/>
                     <input className={style.input} type="text"/>
