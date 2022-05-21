@@ -25,6 +25,15 @@
         padding: 12px 20px;
         margin: 8px 0;
         box-sizing: border-box;
+        background: $backgroundSecondOne;
+        border-radius: 0;
+        border: 1px solid rgba(28, 29, 36, .5);
+
+        &:focus {
+          transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+          border-color: rgba(220, 150, 90, 1);
+          outline: 0 none;
+        }
       }
 
       textarea {
@@ -33,10 +42,15 @@
         height: 150px;
         padding: 12px 20px;
         box-sizing: border-box;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        background-color: #f8f8f8;
         resize: none;
+        border-color: #1a1a1a;
+        background: $backgroundSecondOne;
+        border-radius: 0;
+        &:focus {
+          transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+          border-color: rgba(220, 150, 90, 1);
+          outline: 0 none;
+        }
       }
     }
 

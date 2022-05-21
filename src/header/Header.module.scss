@@ -1,9 +1,17 @@
 @import "../common/style/sass/variables";
 
 .header {
+    position: fixed;
+    left: 0;
+    z-index: 111;
+    width: 100%;
+    top: 0;
+    transition: all .3s ease;
     height: 80px;
-    background-color:$backgroundSecondOne;
+    background-color:$backgroundPrimaryColor;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    border: none;
+    padding: 10px 65px;
 }
