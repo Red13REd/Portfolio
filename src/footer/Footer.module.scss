@@ -4,7 +4,6 @@
 .block {
   height: 40vh;
   background-color: $backgroundSecondOne;
-
   .container {
     @include container();
     flex-direction: column;

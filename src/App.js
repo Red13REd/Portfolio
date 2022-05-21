@@ -6,13 +6,15 @@ import {Projects} from "./projects/projects";
 import {Hire} from "./hire/Hire";
 import {Contacts} from "./сontacts/Contacts";
 import {Footer} from "./footer/Footer";
+import {SkillsSS} from "./skillsss/SkillsSS";
 
 function App() {
     return (
         <div className="App">
             <Header/>
             <Main/>
-            <Skills/>
+            {/*<Skills/>*/}
+            <SkillsSS/>
             <Projects/>
             <Hire/>
             <Contacts/>

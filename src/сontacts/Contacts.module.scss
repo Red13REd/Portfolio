@@ -3,15 +3,12 @@
 
 .block {
   background-color: $backgroundPrimaryColor;
+  padding: 100px 0;
 
   .container {
     @include container();
     flex-direction: column;
     position: relative;
-
-    h2 {
-      background-color: $textColorPrimary;
-    }
 
     .form {
       align-items: normal;
