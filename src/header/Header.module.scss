@@ -1,22 +1,9 @@
 @import "../common/style/sass/variables";
+@import "../common/style/sass/mixins";
+
 
 .header {
-  position: fixed;
-  left: 0;
-  width: 100%;
-  max-width: 100%;
-  top: 0;
-  right: 0;
-  transition: all .3s ease;
-  height: 80px;
-  background-color: $backgroundPrimaryColor;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  border: none;
-  padding: 10px 65px;
-  z-index: 500;
-  text-align: center;
+  @include header($backgroundPrimaryColor);
 
   .container {
     margin-right: 100px;
@@ -27,22 +14,7 @@
 }
 
 .headerActive {
-  position: fixed;
-  left: 0;
-  width: 100%;
-  max-width: 100%;
-  top: 0;
-  right: 0;
-  transition: all .3s ease;
-  height: 80px;
-  background-color: $backgroundSecondOne;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  border: none;
-  padding: 10px 65px;
-  z-index: 500;
-  text-align: center;
+  @include header($backgroundSecondOne);
 
   .container {
     margin-right: 100px;
