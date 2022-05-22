@@ -7,11 +7,12 @@
 
   .container {
     @include container();
-    @media screen and (max-width: 838px) {
 
-    }
     .text {
       color: $textColorPrimary;
+      @media screen and (max-width: 838px) {
+        margin-top: 50px;
+      }
 
       span {
         font-size: 17px;

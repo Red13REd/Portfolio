@@ -4,9 +4,11 @@ import {useEffect} from "react";
 
 export const Header = () => {
 
-    /*const handleScroll = () => {
-        console.log('Scrolling...');
-    };
+    let color = style.header
+    const handleScroll = () => {
+        if (Window.pageYOffset > 50) color = style.header2
+        else color = style.header
+    }
 
 
     useEffect(() => {
@@ -16,10 +18,10 @@ export const Header = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll, true);
         };
-    }, []);*/
+    }, []);
 
     return (
-        <div id="header" className={style.header}>
+        <div id="header" className={color}>
             <div className={style.container}>
                 {/*<div className={style.logo}>LOGO</div>*/}
                 <Nav/>
