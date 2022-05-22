@@ -7,7 +7,9 @@
 
   .container {
     @include container();
+    @media screen and (max-width: 838px) {
 
+    }
     .text {
       color: $textColorPrimary;
 
