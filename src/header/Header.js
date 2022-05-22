@@ -1,27 +1,23 @@
 import style from './Header.module.scss'
 import {Nav} from "../nav/Nav";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 
 export const Header = () => {
 
-    let color = style.header
-    const handleScroll = () => {
-        if (Window.pageYOffset > 50) color = style.header2
-        else color = style.header
-    }
+    const [styleHeader, SetStyleHeader] = useState(false)
 
+    const changeBackground = () => {
+        if (window.scrollY > 50) SetStyleHeader(true)
+        else SetStyleHeader(false)
+    }
+    window.addEventListener('scroll', changeBackground);
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll, true);
-
-        // Remove the event listener
-        return () => {
-            window.removeEventListener('scroll', handleScroll, true);
-        };
+        changeBackground()
     }, []);
 
     return (
-        <div id="header" className={color}>
+        <div id="header" className={styleHeader ? style.headerActive : style.header}>
             <div className={style.container}>
                 {/*<div className={style.logo}>LOGO</div>*/}
                 <Nav/>
