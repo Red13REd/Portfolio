@@ -6,8 +6,12 @@ import {Hire} from "./hire/Hire";
 import {Contacts} from "./сontacts/Contacts";
 import {Footer} from "./footer/Footer";
 import {Skills} from "./skills/Skills";
+import React from "react";
+
 
 function App() {
+
+
     return (
         <div className="App">
             <Header/>
@@ -18,6 +22,7 @@ function App() {
             <Contacts/>
             <Footer/>
         </div>
+
     );
 }
 

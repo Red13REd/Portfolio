@@ -3,7 +3,7 @@ import style from './main.module.scss'
 
 export const Main = () => {
     return (
-        <div className={style.mainBlock}>
+        <div id="main" className={style.mainBlock}>
             <div className={style.container}>
                 <div className={style.text}>
                     <span>Hi There</span>

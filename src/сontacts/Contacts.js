@@ -5,7 +5,7 @@ import {Title} from "../common/components/title/Title";
 
 export const Contacts = () => {
     return (
-        <div className={style.block}>
+        <div id="contacts" className={style.block}>
             <div className={style.container}>
                 <Title title="Contacts"/>
                 <form className={style.form} action="">
