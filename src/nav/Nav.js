@@ -9,7 +9,7 @@ export const Nav = () => {
                 activeClass={style.active}
                 spy={true}
                 smooth={true}
-                offset={1}
+                offset={-70}
                 duration={500}
                 to="main">Main</Link>
 
@@ -17,7 +17,7 @@ export const Nav = () => {
                 activeClass={style.active}
                 spy={true}
                 smooth={true}
-                offset={1}
+                offset={-70}
                 duration={500}
                 to="skills">Skills</Link>
 
@@ -25,7 +25,7 @@ export const Nav = () => {
                 activeClass={style.active}
                 spy={true}
                 smooth={true}
-                offset={1}
+                offset={-70}
                 duration={500}
                 to="projects">Projects</Link>
 
@@ -33,7 +33,7 @@ export const Nav = () => {
                 activeClass={style.active}
                 spy={true}
                 smooth={true}
-                offset={1}
+                offset={-70}
                 duration={500}
                 to="contacts">Contacts</Link>
         </div>
