@@ -1,4 +1,4 @@
-import style from './Header.module.scss'
+import style from "./Header.module.scss";
 import {Nav} from "../nav/Nav";
 import {useEffect, useState} from "react";
 

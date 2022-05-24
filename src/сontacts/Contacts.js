@@ -1,5 +1,5 @@
-import React from 'react';
-import style from './Contacts.module.scss'
+import React from "react";
+import style from "./Contacts.module.scss"
 import {Title} from "../common/components/title/Title";
 
 
