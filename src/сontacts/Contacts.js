@@ -9,10 +9,10 @@ export const Contacts = () => {
             <div className={style.container}>
                 <Title title="Contacts"/>
                 <form className={style.form} action="">
-                    <input placeholder="Name" className={style.input} type="text"/>
-                    <input  placeholder="Email" className={style.input} type="text"/>
+                    <input name="Name" placeholder="Name" className={style.input} type="text"/>
+                    <input placeholder="Email" className={style.input} type="text"/>
                     <textarea className={style.textarea} placeholder="Your message"
-                               id="" cols="30" rows="10"/>
+                              id="" cols="30" rows="10"/>
                     <button type="submit" className={style.button}>Отправить</button>
                 </form>
             </div>
