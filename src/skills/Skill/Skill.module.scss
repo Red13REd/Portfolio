@@ -49,16 +49,16 @@
     &:before {
       top: auto;
       right: 0;
-      border-left: 5px solid #dc965a;
-      border-right: 5px solid #dc965a;
+      border-left: 5px solid $themeColor;
+      border-right: 5px solid $themeColor;
       height: 0;
     }
 
     &:after {
       top: 0;
       right: auto;
-      border-top: 5px solid #dc965a;
-      border-bottom: 5px solid #dc965a;
+      border-top: 5px solid $themeColor;
+      border-bottom: 5px solid $themeColor;
       width: 0;
     }
 
@@ -77,13 +77,12 @@
     }
 
     .icon {
-      background-color: #646464;
       width: 60px;
       height: 60px;
       line-height: 60px;
       font-size: 50px;
       margin-bottom: 20px;
-      color: #dc965a;
+      color: $themeColor;
       transition: .5s ease-in-out;
     }
 

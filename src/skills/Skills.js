@@ -2,6 +2,9 @@ import React from 'react';
 import style from './Skills.module.scss'
 import {Skill} from "./Skill/Skill";
 import {Title} from "../common/components/title/Title";
+import {faReact} from "@fortawesome/free-brands-svg-icons";
+import {faJs} from "@fortawesome/free-brands-svg-icons";
+import {faCss3} from "@fortawesome/free-brands-svg-icons";
 
 export const Skills = () => {
 
@@ -9,20 +12,23 @@ export const Skills = () => {
         {
             title: "JS", description:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            img: ""
+            img: "",
+            icon: faJs,
         },
         {
             title: "CSS", description:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
                 " Morbi pellentesque felis dignissim nibh ullamcorper tempus. " +
                 "Quisque eget ante sollicitudin, efficitur.",
-            img: ""
+            img: "",
+            icon: faCss3,
         },
         {
             title: "React", description:
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
                 "Morbi pellentesque felis dignissim nibh ullamcorper tempus. ",
-            img: ""
+            img: "",
+            icon: faReact,
         },
     ]
 
@@ -38,6 +44,7 @@ export const Skills = () => {
                             title={m.title}
                             description={m.description}
                             img={m.img}
+                            icon={m.icon}
                         />
                     })}
                 </div>

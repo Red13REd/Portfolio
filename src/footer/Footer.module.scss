@@ -2,8 +2,9 @@
 @import "../common/style/sass/mixins";
 
 .block {
-  height: 40vh;
+  height: 20vh;
   background-color: $backgroundSecondOne;
+
   .container {
     @include container();
     flex-direction: column;
@@ -13,7 +14,6 @@
 
     .footerBlock {
       width: 280px;
-      border: 1px solid;
       display: flex;
       justify-content: space-between;
       flex-direction: row;
@@ -21,7 +21,6 @@
       div {
         height: 50px;
         width: 50px;
-        background-color: #83827e;
       }
     }
   }
