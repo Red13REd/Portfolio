@@ -23,7 +23,7 @@ export const Footer = () => {
                         <FontAwesomeIcon color={"white"} size={"2x"} icon={faLinkedin}/>
                     </div>
                 </div>
-                <span className={style.text}>@2022 Все права защищены </span>
+                <span className={style.text}>2022 All rights reserved </span>
             </div>
         </div>
     );
