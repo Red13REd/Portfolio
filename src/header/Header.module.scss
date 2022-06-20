@@ -24,22 +24,33 @@
   }
 }
 
-/*
-.scroll_up {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  background-color: #fff;
-  color: #dc965a;
-  width: 42px;
-  height: 45px;
-  z-index: 99;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  transition: all .3s ease-in-out;
-  box-shadow: 0 0 30px rgb(0, 0, 0 / 15%);
-  font-size: 20px;
-  cursor: pointer;
-}*/
+.headerBurger {
+  @include header($backgroundPrimaryColor);
+  @media screen and (max-width: 500px) {
+    height: 250px;
+    transition: 1s ease-in-out;
+  }
+
+  .container {
+    margin-right: 100px;
+    @media screen and (max-width: 500px) {
+      margin-right: 70px;
+
+    }
+  }
+}
+
+.headerActiveBurger {
+  @include header($backgroundSecondOne);
+  @media screen and (max-width: 500px) {
+    height: 250px;
+    transition: 1s ease-in-out;
+  }
+
+  .container {
+    margin-right: 100px;
+    @media screen and (max-width: 500px) {
+      margin-right: 70px;
+    }
+  }
+}

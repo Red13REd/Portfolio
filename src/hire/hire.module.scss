@@ -17,11 +17,10 @@
     text-align: center;
     align-items: center;
 
-    .button{
-      @include button()
+    .button {
+      @include button();
+
     }
-
-
   }
 }
 

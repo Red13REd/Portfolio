@@ -1,15 +1,16 @@
 import React from "react";
-import style from "./project.module.scss";
+import styles from "./project.module.scss";
 
 export const Project = (props) => {
     return (
-        <div className={style.project}>
-            <div className={style.image} style={props.style}>
-                <a className={style.button} href="">Смотреть</a>
+        <div className={styles.project}>
+            <div className={styles.image} style={props.style}>
+                <a className={styles.button} target="_blank" href={props.href}>Watch</a>
             </div>
-            <div className={style.textInfo}>
-                <h6 className={style.title}>{props.title}</h6>
-                <span className={style.description}>{props.description}</span>
+            <div className={styles.textInfo}>
+                <h6 className={styles.title}>{props.title}</h6>
+                <span className={styles.description}>{props.description}</span>
+                <a target="_blank" href={props.hrefCode}>Code</a>
             </div>
         </div>
     );

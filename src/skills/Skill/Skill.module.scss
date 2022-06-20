@@ -1,8 +1,8 @@
 @import "../../common/style/sass/variables";
 
-.wrapp {
+.wrap {
   box-sizing: border-box;
-  margin-top: 24px;
+  margin-top: 40px;
   padding: 0 12px;
   display: flex;
   width: 400px;
@@ -21,6 +21,13 @@
     z-index: 1;
     overflow-wrap: break-word;
     max-width: 100%;
+    margin: 40px 20px 0 20px;
+    @media screen and (max-width: 600px) {
+      margin: 40px 10px 0 10px;
+    }
+    @media screen and (max-width: 400px) {
+      margin: 40px 0 0 0;
+    }
 
     &:hover {
       top: -5px;

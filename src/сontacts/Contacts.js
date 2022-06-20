@@ -1,20 +1,23 @@
 import React from "react";
-import style from "./Contacts.module.scss"
+import styles from "./Contacts.module.scss"
 import {Title} from "../common/components/title/Title";
+import Fade from 'react-reveal/Fade';
 
 
 export const Contacts = () => {
     return (
-        <div id="contacts" className={style.block}>
-            <div className={style.container}>
+        <div id="contacts" className={styles.block}>
+            <div className={styles.container}>
                 <Title title="Contacts"/>
-                <form className={style.form} action="">
-                    <input name="Name" placeholder="Name" className={style.input} type="text"/>
-                    <input placeholder="Email" className={style.input} type="text"/>
-                    <textarea className={style.textarea} placeholder="Your message"
-                              id="" cols="30" rows="10"/>
-                    <button type="submit" className={style.button}>Отправить</button>
-                </form>
+                <Fade>
+                    <form className={styles.form} action="">
+                        <input name="Name" placeholder="Name" className={styles.input} type="text"/>
+                        <input placeholder="Email" className={styles.input} type="text"/>
+                        <textarea className={styles.textarea} placeholder="Your message"
+                                  id="" cols="30" rows="10"/>
+                        <button type="submit" className={styles.button}>Send message</button>
+                    </form>
+                </Fade>
             </div>
         </div>
     );

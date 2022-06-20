@@ -1,58 +1,80 @@
 import React from 'react';
-import style from './projects.module.scss'
+import styles from './projects.module.scss'
 import {Project} from "./project/project";
 import {Title} from "../common/components/title/Title";
 import one from "../assets/image/one.png"
 import two from "../assets/image/two.jfif"
+import counter from "../assets/image/counter.jpg"
+import cards from "../assets/image/cards.jpg"
+import Fade from 'react-reveal/Fade';
+
+const projects = [
+    {
+        title: "Social network",
+        description:
+            "TypeScript, React, Redux Toolkit, Redux-thunk, Router-dom, " +
+            "Axios, Mui for some component, SCSS, Formik; Bug fixing, deploying.",
+        hrefCode: "https://github.com/Red13REd/SocialNetwork",
+        href: "https://github.com/Red13REd/SocialNetwork",
+        style: {
+            backgroundImage: `url(${one})`,
+        }
+    },
+    {
+        title: "To Do List",
+        description:
+            "TypeScript, React, Redux Toolkit, Redux-thunk, Router-dom, " +
+            "Axios, Mui, Formik, Storybook; Bug fixing, deploying;" +
+            " Covering code with unit tests.",
+        hrefCode: "https://github.com/Red13REd/Todolist",
+        href: "https://github.com/Red13REd/Todolist",
+        style: {
+            backgroundImage: `url(${two})`,
+        }
+    },
+    {
+        title: "Counter",
+        description:
+            "My first project with React/Redux/TS. I left It here as a memory.",
+        hrefCode: "https://github.com/Red13REd/Counter",
+        href: "https://github.com/Red13REd/Counter",
+        style: {
+            backgroundImage: `url(${counter})`,
+        }
+    },
+    {
+        title: "Smart cards",
+        description:
+            "TypeScript, React, Redux, Redux-thunk, Router-dom," +
+            " Axios,  SCSS; Team development; Bug fixing, deploying.",
+        hrefCode: "https://github.com/TonyFinder/cards-nya-front",
+        href: "https://tonyfinder.github.io/cards-nya-front/#/login",
+        style: {
+            backgroundImage: `url(${cards})`,
+        }
+    },
+]
 
 
 export const Projects = () => {
-
-    const projects = [
-        {
-            title: "My First Project",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            style: {
-                color: 'blue',
-                backgroundImage: `url(${one})`,
-            }
-        },
-        {
-            title: "My Second Project",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            style: {
-                color: 'blue',
-                backgroundImage: `url(${two})`,
-            }
-        },
-    ]
-
-    const todoStyle = {
-        color: 'blue',
-        backgroundImage: 'url(' + "../assets/image/one.png" + ')',
-    };
-
-    const socialStyle = {
-        color: 'blue',
-        backgroundImage: 'url(' + "../assets/image/two.jfif" + ')',
-    };
-
     return (
-        <div id="projects" className={style.projectsBlock}>
-            <div className={style.container}>
+        <div id="projects" className={styles.projectsBlock}>
+            <div className={styles.container}>
                 <Title title="Projects"/>
-                <div className={style.projects}>
-                    {projects.map((m, i) => {
-                        return <Project
-                            key={i}
-                            title={m.title}
-                            description={m.description}
-                            style={m.style}
-                        />
-                    })}
-                </div>
+                <Fade>
+                    <div className={styles.projects}>
+                        {projects.map((m, i) => {
+                            return <Project
+                                key={i}
+                                title={m.title}
+                                description={m.description}
+                                style={m.style}
+                                href={m.href}
+                                hrefCode={m.hrefCode}
+                            />
+                        })}
+                    </div>
+                </Fade>
             </div>
         </div>
     );

@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 export const Skill = (props) => {
     return (
-        <div className={style.wrapp}>
+        <div className={style.wrap}>
             <div className={style.skill}>
                 <div className={style.icon}>
                     <FontAwesomeIcon icon={props.icon}/>
