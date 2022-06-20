@@ -10,6 +10,10 @@
     flex-direction: column;
     position: relative;
 
+    .errorDiv {
+      color: red;
+    }
+
     .form {
       display: flex;
       flex-direction: column;
@@ -70,8 +74,21 @@
 
     .button[type="submit"] {
       margin-top: 20px;
-      @include button()
+      @include button();
+
+      &:disabled {
+        background-color: dimgray;
+
+        &:after {
+          content: none;
+        }
+
+        &:before {
+          content: none;
+        }
+      }
     }
+
   }
 }
 
