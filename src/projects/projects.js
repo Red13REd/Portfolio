@@ -27,7 +27,7 @@ const projects = [
             "Axios, Mui, Formik, Storybook; Bug fixing, deploying;" +
             " Covering code with unit tests.",
         hrefCode: "https://github.com/Red13REd/Todolist",
-        href: "https://github.com/Red13REd/Todolist",
+        href: "https://red13red.github.io/todolist/#/login",
         style: {
             backgroundImage: `url(${two})`,
         }
@@ -37,7 +37,7 @@ const projects = [
         description:
             "My first project with React/Redux/TS. I left It here as a memory.",
         hrefCode: "https://github.com/Red13REd/Counter",
-        href: "https://github.com/Red13REd/Counter",
+        href: "https://red13red.github.io/Counter/",
         style: {
             backgroundImage: `url(${counter})`,
         }

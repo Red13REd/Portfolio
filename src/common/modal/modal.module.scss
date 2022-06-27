@@ -1,0 +1,41 @@
+@import "../../common/style/sass/variables";
+@import "../../common/style/sass/mixins";
+
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh;
+  background: black;
+  opacity: 0.55;
+  z-index: 20;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px !important;
+  border-radius: 4px;
+  background: $backgroundPrimaryColor;
+  z-index: 21;
+}
+
+.Button {
+  margin-top: 20px;
+  @include button();
+
+  &:disabled {
+    background-color: dimgray;
+
+    &:after {
+      content: none;
+    }
+
+    &:before {
+      content: none;
+    }
+  }
+}

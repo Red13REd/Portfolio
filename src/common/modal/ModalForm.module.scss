@@ -1,0 +1,112 @@
+@import "../../common/style/sass/variables";
+@import "../../common/style/sass/mixins";
+
+
+.container {
+  @include container();
+  flex-direction: column;
+  position: relative;
+
+  .errorDiv {
+    color: red;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;;
+    align-items: center;
+
+    @media screen and (max-width: 700px) {
+      width: 280px;
+    }
+
+    .input[type=text] {
+      font-family: 'Roboto Mono', monospace;
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      background: $backgroundSecondOne;
+      border-radius: 0;
+      border: 1px solid rgba(28, 29, 36, .5);
+      color: $textColorPrimary;
+
+      &:focus {
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        border-color: rgba(220, 150, 90, 1);
+        outline: 0 none;
+      }
+
+      &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 1000px $backgroundSecondOne inset;
+        -webkit-text-fill-color: $textColorPrimary;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+
+    }
+
+    .ButtonWrapper {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+
+      .Button[type="submit"], .Button {
+        margin-top: 20px;
+        @include button();
+
+        &:disabled {
+          background-color: dimgray;
+
+          &:after {
+            content: none;
+          }
+
+          &:before {
+            content: none;
+          }
+        }
+      }
+    }
+
+    .textarea {
+      font-family: 'Roboto Mono', monospace;
+      margin: 8px 0;
+      width: 100%;
+      height: 150px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      resize: none;
+      border-color: #1a1a1a;
+      background: $backgroundSecondOne;
+      border-radius: 0;
+      color: $textColorPrimary;
+
+      &:focus {
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        border-color: rgba(220, 150, 90, 1);
+        outline: 0 none;
+      }
+    }
+  }
+
+}
+
+.Button {
+  margin-top: 20px;
+  @include button();
+
+  &:disabled {
+    background-color: dimgray;
+
+    &:after {
+      content: none;
+    }
+
+    &:before {
+      content: none;
+    }
+  }
+}
