@@ -43,12 +43,12 @@ const projects = [
         }
     },
     {
-        title: "Smart cards",
+        title: "Cards study",
         description:
             "TypeScript, React, Redux, Redux-thunk, Router-dom," +
             " Axios,  SCSS; Team development; Bug fixing, deploying.",
-        hrefCode: "https://github.com/TonyFinder/cards-nya-front",
-        href: "https://tonyfinder.github.io/cards-nya-front/#/login",
+        hrefCode: "https://github.com/TonyFinder/Cards-study",
+        href: "https://tonyfinder.github.io/Cards-study/#/login",
         style: {
             backgroundImage: `url(${cards})`,
         }
