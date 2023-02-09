@@ -90,7 +90,7 @@ export const Main = () => {
                 <div className={styles.container}>
                     <div className={styles.text}>
                         <span>Hi There</span>
-                        <span>2I am Vadim <span>Chernyavskiy</span> </span>
+                        <span>I am Vadim <span>Chernyavskiy</span> </span>
                         <ReactTypingEffect
                             speed={250}
                             typingDelay={1000}
